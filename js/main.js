@@ -3,16 +3,16 @@ function calcular() {
     var valor2 = document.getElementById('valor2').value
     var operacion = document.getElementById('operaciones').value
 
-    if(operacion=="sumar"){
-        var resultado = Number(valor1)+Number(valor2)
-    }else if(operacion=="restar"){
-        var resultado = Number(valor1)-Number(valor2)
-    }else if(operacion=="multiplicar"){
-        var resultado = Number(valor1)*Number(valor2)
-    }else{
-        var resultado = Number(valor1)/Number(valor2)
+    if (operacion == "sumar") {
+        var resultado = Number(valor1) + Number(valor2)
+    } else if (operacion == "restar") {
+        var resultado = Number(valor1) - Number(valor2)
+    } else if (operacion == "multiplicar") {
+        var resultado = Number(valor1) * Number(valor2)
+    } else {
+        var resultado = Number(valor1) / Number(valor2)
     }
-    
+
     var parrafo = document.getElementById('resultado')
-    parrafo.innerHTML="El resultado es "+resultado
+    parrafo.innerHTML = "El resultado es " + resultado
 }
